@@ -1,0 +1,424 @@
+/* =============================== */
+/* ESTILO GERAL DO SITE */
+/* =============================== */
+body {
+    background-color: #ff4f4f;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding-top: 90px; /* espaço para o menu fixo */
+}
+
+/* =============================== */
+/* TÍTULOS */
+/* =============================== */
+h1 {
+    color: #0c0000;
+    text-align: center;
+}
+
+
+
+/* =============================== */
+/* PARÁGRAFOS */
+/* =============================== */
+p {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 1000px;
+    margin: auto;
+    text-align: justify;
+}
+
+/* =============================== */
+/* MENU FIXO */
+/* =============================== */
+nav {
+    background-color: #111;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 0;
+    text-align: center;
+    z-index: 1000;
+}
+
+nav ul {
+   
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    display: inline-block;
+    padding: 12px 22px;
+    background-color: #c40000;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #8b0000;
+    transform: scale(1.05);
+    color: #283cb1;
+}
+
+@media (max-width: 768px) {
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    nav {
+        padding: 10px 0;
+    }
+
+}
+
+/* =============================== */
+/* FORMULÁRIO – HOMEM-ARANHA */
+/* =============================== */
+form {
+    max-width: 600px;
+    margin: 40px auto;
+    background-color: #111;
+    padding: 25px;
+    border-radius: 12px;
+    color: white;
+}
+
+/* Fieldset */
+fieldset {
+    border: 2px solid #c40000;
+    border-radius: 10px;
+    padding: 25px; /* espaço interno maior */
+}
+
+/* Legend */
+legend {
+    color: #c40000;
+    font-weight: bold;
+    padding: 0 10px;
+}
+
+/* Labels */
+label {
+    display: block;
+    margin-top: 12px;
+    font-weight: bold;
+}
+
+/* =============================== */
+/* CAMPOS DO FORMULÁRIO */
+/* =============================== */
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+    box-sizing: border-box; /* EVITA ENCOSTAR NA BORDA */
+}
+
+/* Campo de mensagem */
+textarea {
+    min-height: 160px;
+    resize: vertical;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Foco nos campos */
+input:focus,
+textarea:focus {
+    outline: 2px solid #c40000;
+}
+
+/* =============================== */
+/* BOTÃO DO FORMULÁRIO */
+/* =============================== */
+input[type="submit"] {
+    background-color: #c40000;
+    color: white;
+    border: none;
+    padding: 14px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #8b0000;
+    color: #283cb1;
+    transform: scale(1.05);
+}
+
+/* =============================== */
+/* IMAGENS */
+/* =============================== */
+img {
+    display: block;
+    margin: 30px auto;
+    max-width: 90%;
+    border-radius: 10px;
+}
+
+/* =============================== */
+/* RODAPÉ */
+/* =============================== */
+footer {
+    background-color: #111;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/*================================= */
+/* CARROSSEL */
+/*================================= */
+
+#carouselExample {
+  width: 75%;
+}
+
+.carousel-item img {
+  height: 700px;
+  width: 10%;
+  object-fit: cover;
+}
+
+/* =====================
+   PADRÃO DOS CARTÕES
+===================== */
+.card {
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #111;
+
+  /* SOMBRA BASE */
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+}
+
+/* EFEITO AO PASSAR O MOUSE */
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 25px 55px rgba(0, 0, 0, 0.8);
+}
+
+
+
+/* =====================
+   PADRÃO DAS IMAGENS
+===================== */
+.card-img-top {
+  width: 100%;
+  height: 220px;        /* todas iguais */
+  object-fit: cover;   /* corta sem esticar */
+  border-radius: 0;    /* remove bordas estranhas */
+}
+
+/* =====================
+   TEXTO DO CARD
+===================== */
+.card-title {
+  text-transform: capitalize;
+  color: aliceblue;
+}
+
+.card-text {
+  font-size: 14px;
+  color: aliceblue;
+}
+
+/* =====================
+   BOTÃO
+===================== */
+.card .btn {
+  margin-top: auto;
+  background-color: #ff4f4f;
+  color: #ffffff;
+}
+
+.card .btn:hover {
+    transform: scale(1.02);
+    background-color: #8b0000;
+    color: #283cb1;
+}
+
+/* =====================
+   GARANTIA EXTRA
+===================== */
+img {
+  border-radius: 0;
+}
+
+/* ===== ESTILO IGUAL AO FORMULÁRIO ===== */
+.contato-style {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  border: 2px solid #ffffff;
+  border-radius: 12px;
+  background-color: #010003;
+}
+
+/* Cada item do accordion */
+.contato-style .accordion-item {
+  border: none;
+  margin-bottom: 15px;
+}
+
+/* Botão (pergunta) */
+.contato-style .accordion-button {
+  background-color: #b30101;
+  border: 2px solid #ffffff;
+  border-radius: 8px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+/* Quando estiver aberto */
+.contato-style .accordion-button:not(.collapsed) {
+  background-color: #c40000;
+  color: #1707a7;
+}
+
+/* Corpo (resposta) */
+.contato-style .accordion-body {
+  border: 2px solid #ffffff;
+  border-top: none;
+  border-radius: 0 0 8px 8px;
+  padding: 15px;
+  background-color: #050000;
+  color: #ffffff;
+}
+
+/* Remove seta azul padrão */
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+
+.alert-custom {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 15px 20px;
+  border: 2px solid #ffffff;
+  border-radius: 12px;
+  background-color: #000000;
+  color: #ffffff;
+  text-align: center;
+  transition: all 0.3s ease; /* animação suave */
+}
+
+.alert-custom:hover {
+  background-color: #c40000;
+  color: #241c94;
+  transform: scale(1.02);
+}
+
+form {
+    max-width: 600px;
+    margin: 40px auto;
+    background-color: #111;
+    padding: 25px;
+    border-radius: 12px;
+    color: white;
+
+    /* SOMBREAMENTO NOVO */
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+}
+
+/* =========================
+   MODO ESCURO GLOBAL
+========================= */
+
+.dark-mode {
+    background-color: #000 !important;
+    color: #ffffff !important;
+}
+
+.dark-mode nav {
+    background-color: #000 !important;
+}
+
+.dark-mode p,
+.dark-mode h1,
+.dark-mode label,
+.dark-mode legend {
+    color: #ffffff !important;
+}
+
+.dark-mode .card {
+    background-color: #000 !important;
+}
+
+.dark-mode footer {
+    background-color: #000 !important;
+}
+
+/* =========================
+   RESPONSIVIDADE
+========================= */
+
+@media (max-width: 768px) {
+
+    body {
+        padding-top: 140px; /* mais espaço pro menu */
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 16px;
+        padding: 0 10px;
+    }
+
+}
+
+
+#btnTopo{
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    display: none;
+
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+    border: none;
+
+    width: 55px;
+    height: 55px;
+
+    border-radius: 50%;
+    font-size: 24px;
+    cursor: pointer;
+
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+
+    transition: transform 0.2s, background 0.3s;
+}
+
+#btnTopo:hover{
+    background: #000000;
+    transform: scale(1.1);
+}

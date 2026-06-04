@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>converse com multiverso</title>
+
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <link rel="icon" href="miranha.png" type="image/png">
+
+
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <nav class="menu">
+  <ul>
+    <li><a href="site1.html">Início</a></li>
+    <li><a href="site2.html">Tobey Maguire</a></li>
+    <li><a href="site3.html">Andrew Garfield</a></li>
+    <li><a href="site4.html">Tom Holland</a></li>
+    <li><a href="site5.html">Miles Morales</a></li>
+    <li><a href="site6.html">notícias</a></li>
+
+
+
+
+    <button id="darkModeBtn" class="btn btn-dark" style="margin-left:10px;">
+🌙
+</button>
+
+  </ul>
+</nav>
+
+
+ <ins><h1>FORMULÁRIO</h1></ins>
+
+<br>
+<br>
+
+<form action="/submit-shipping" method="post">
+    <fieldset>
+        <legend>Informações de Envio</legend>
+
+        <label for="nome_completo">Nome Completo:</label>
+        <input type="text" id="nome_completo" name="nome_completo" required>
+
+        <label for="endereco">Endereço (Rua, Av., etc.):</label>
+        <input type="text" id="endereco" name="endereco" required>
+
+        <label for="numero">Número:</label>
+        <input type="text" id="numero" name="numero" required size="5">
+
+        <label for="complemento">Complemento (Apto, Bloco, etc.):</label>
+        <input type="text" id="complemento" name="complemento">
+
+        <label for="bairro">Bairro:</label>
+        <input type="text" id="bairro" name="bairro" required>
+
+        <label for="cidade">Cidade:</label>
+        <input type="text" id="cidade" name="cidade" required>
+
+        <label for="estado">Estado (UF):</label>
+        <input type="text" id="estado" name="estado" required size="2" maxlength="2">
+
+        <label for="cep">CEP:</label>
+        <input type="text" id="cep" name="cep" required
+               pattern="[0-9]{5}-[0-9]{3}" title="Formato: 12345-678"
+               size="10" maxlength="9">
+
+        <label for="pais">País:</label>
+        <input type="text" id="pais" name="pais" value="Brasil" required>
+
+        <label for="mensagem">Deixe sua mensagem:</label>
+        <textarea id="mensagem" name="mensagem" rows="5"
+            placeholder="Escreva aqui sua mensagem para o Aranhaverso..."></textarea>
+    </fieldset>
+
+    <input type="submit" value="Enviar Formulário">
+</form>
+
+<br><br>
+
+
+<button id="btnTopo">🕷️</button>
+
+
+
+
+
+  <footer>
+    &copy; 2026 Meu Site
+  </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+<script src="script7.Js"></script>
+
+
+</body>
+</html>
